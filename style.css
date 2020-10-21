@@ -1,0 +1,98 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing:border-box;
+	text-decoration:none;
+	font-family: Arial;
+	font-size: 14px;
+}
+body{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	min-height: 100vh;
+	background-color:rgb(243,243,243);
+	display: flex;
+	justify-content: center;
+}
+
+input{	
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	width: 70%;
+	height: 2.3rem;
+}
+button{
+	display: flex;
+	align-content: center;
+	justify-content: space-around;
+	width: 70%;
+}
+.content{
+	display:flex; /* alinha em linha */ 
+	align-items: center; /* alinhamento vertical*/ 
+	justify-content: start;/* em linha, x, horizontal */
+	width:60%;
+	height: 100vh; /* vh = viewpoint */
+}
+
+/* O layout flexível permite que os elementos responsivos dentro de um contêiner sejam organizados automaticamente, dependendo do tamanho da tela */
+.col-1{
+	display:flex; /* flex, isso faz com que os elementos fiquem na mesma linha */
+	align-items: center; /* alinha itens na vertical para o centro */
+	justify-content: center;/* ajusta o conteúdo ao centro */
+	width: 50%
+}
+.col-1 img{
+	height: 50rem;
+}
+
+.col-2{
+	display:flex;
+	align-content:center;
+	justify-content: space-around; /* espaço ao redor */
+	flex-direction: column;
+	width: 50%;
+	min-height: 34rem;/* este deu o espço entre os blocos */
+}
+.col-2 img{
+	height: 3rem;
+}
+.group{
+	display:flex;
+	justify-content: space-between;
+	align-content: center;
+	flex-direction: column;
+	background-color: #ffffff;
+	padding: 1.3rem 0;
+	width: 100%;
+	border: 1px solid lightgray;
+}
+
+/* pega os filhos desse elemento */
+/* 1 pega o primeiro, 2 pegava o 2 bloco, pois ele pega na ordem.*/
+.group:nth-child(1){
+	min-height: 19rem;
+}
+/* usou isso para setar as imagens nos downloads */
+
+
+
+/* não está no html */
+.content-input{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	border-radius: 50%;
+	overflow: hidden;/* o que ultrapassaria os limites da div está escondido */
+}
+
+/* media queries */
+/* até 1024px */
+@media (max-width: 1024px){
+
+}
+@media(max-width: 650px)
