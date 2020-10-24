@@ -58,19 +58,48 @@ button{
 	width: 50%;
 	min-height: 34rem;/* este deu o espço entre os blocos */
 }
-.col-2 img{
-	height: 3rem;
+.col-2 .group img{
+	max-height: 3rem ;
 }
 .group{
 	display:flex;
 	justify-content: space-between;
 	align-content: center;
+	align-items: center;
 	flex-direction: column;
 	background-color: #ffffff;
 	padding: 1.3rem 0;
 	width: 100%;
 	border: 1px solid lightgray;
 }
+.group input{
+	border-radius: 5px;
+	border-color: lightgray;
+	color: lightgray;
+}
+.group button{
+	border-radius: 5px;
+	background-color: rgba(var(--d69,0,149,246),.3);
+	border: none;
+	font-weight: 600;
+	padding: 5px 9px;
+	opacity: 1;
+	color: white;
+}
+.group a{
+	color: #385185
+}
+
+.FacebookIcon{
+	background-image: url("img/facebook-logo.png");
+    height: 16px;
+    width: 16px;
+}
+
+.download{
+	display: flex;
+}
+
 
 /* pega os filhos desse elemento */
 /* 1 pega o primeiro, 2 pegava o 2 bloco, pois ele pega na ordem.*/
@@ -90,9 +119,15 @@ button{
 	overflow: hidden;/* o que ultrapassaria os limites da div está escondido */
 }
 
+.app-download:nth-child(1){
+	
+}
+
 /* media queries */
 /* até 1024px */
 @media (max-width: 1024px){
 
 }
-@media(max-width: 650px)
+@media(max-width: 650px){
+	
+}
