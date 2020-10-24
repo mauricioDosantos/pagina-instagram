@@ -76,6 +76,7 @@ button{
 	border-radius: 5px;
 	border-color: lightgray;
 	color: lightgray;
+	text-indent: 15px;
 }
 .group button{
 	border-radius: 5px;
@@ -121,6 +122,32 @@ button{
 
 .app-download:nth-child(1){
 	
+}
+#line-placeholder{
+	flex-direction: row;
+	align-items: center;
+	align-content: center;
+	justify-content:center;
+	width: 100%;
+	height: auto;
+}
+.col-2 .group #line-placeholder p{
+	margin:0;
+	padding-left: 12PX;
+	color: #dbdbdb;
+	float: left;
+	position: relative;
+}
+
+.linha{
+	margin-left: 12px;
+	margin-top: 10px;
+	width: 25%;
+	float: left;
+	background-color: #dbdbdb;
+	height: 1px;
+	float: center;
+	top: .45em;
 }
 
 /* media queries */
